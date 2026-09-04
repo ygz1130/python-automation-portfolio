@@ -1,9 +1,0 @@
-fastapi<1,>=0.115
-openpyxl<4,>=3.1
-pandas<3,>=2.2
-python-multipart<1,>=0.0.20
-uvicorn<1,>=0.34
-
-[dev]
-httpx<1,>=0.28
-pytest<9,>=8.3
