@@ -1,0 +1,13 @@
+ Customer ID ,Email Address,Company Name,Region
+ C-001 ,HELLO@ASTER-VALE.EXAMPLE.COM, Aster  Vale Studio ,north
+C-001,hello@aster-vale.example.com,Aster Vale Studio,North
+C-002,contact@blue-orbit.example.com,Blue Orbit Works,SOUTH
+C-003,, Cedar  Finch Lab ,west
+ C-004,INFO@DELTA-LANTERN.EXAMPLE.COM,Delta Lantern Co,East
+C-005,team@ember-hollow.example.com,  Ember Hollow Studio  ,north
+C-006,hello@fable-ridge.example.com,Fable Ridge Works,West
+C-006, HELLO@FABLE-RIDGE.EXAMPLE.COM ,Fable  Ridge Works,west
+C-007,desk@grove-pixel.example.com,Grove Pixel Lab,east
+C-008,mail@harbor-kite.example.com,Harbor Kite Studio,South
+C-009, ,Ivory Acorn Works,NORTH
+C-010,support@juniper-loop.example.com, Juniper Loop Lab ,south
