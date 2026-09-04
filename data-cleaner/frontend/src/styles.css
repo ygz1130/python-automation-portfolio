@@ -271,13 +271,18 @@ form {
   padding-top: 4px;
 }
 
-.form-actions a {
+.sample-button {
+  padding: 6px 0;
+  border: 0;
   color: #36646b;
+  background: transparent;
+  cursor: pointer;
   font-size: 12px;
   font-weight: 750;
+  text-decoration: underline;
 }
 
-.form-actions button {
+.form-actions button[type="submit"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -293,11 +298,11 @@ form {
   font-weight: 800;
 }
 
-.form-actions button:hover:not(:disabled) {
+.form-actions button[type="submit"]:hover:not(:disabled) {
   background: #116f65;
 }
 
-.form-actions button:disabled {
+.form-actions button[type="submit"]:disabled {
   cursor: not-allowed;
   opacity: 0.45;
   box-shadow: none;
@@ -581,7 +586,6 @@ footer {
   .file-button span { text-align: center; }
   .form-actions { align-items: stretch; flex-direction: column-reverse; }
   .form-actions button { width: 100%; }
-  .form-actions > a { text-align: center; }
   .metrics-grid { grid-template-columns: repeat(2, 1fr); }
   .results-heading { align-items: flex-start; }
   .results-heading h2 { font-size: 29px; }

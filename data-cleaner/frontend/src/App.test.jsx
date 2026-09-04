@@ -1,5 +1,5 @@
 import "@testing-library/jest-dom/vitest";
-import { render, screen } from "@testing-library/react";
+import { cleanup, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, describe, expect, it, vi } from "vitest";
 
@@ -8,6 +8,7 @@ import App from "./App";
 
 describe("data cleaning workflow", () => {
   afterEach(() => {
+    cleanup();
     vi.restoreAllMocks();
   });
 
@@ -55,5 +56,19 @@ describe("data cleaning workflow", () => {
     expect(screen.getByText("2 duplicates")).toBeInTheDocument();
     expect(screen.getByText("Aster Vale Studio")).toBeInTheDocument();
     expect(globalThis.fetch).toHaveBeenCalledTimes(1);
+  });
+
+  it("loads the fictional sample into the file picker", async () => {
+    vi.spyOn(globalThis, "fetch").mockResolvedValue({
+      ok: true,
+      blob: async () => new Blob(["customer_id,email\nC-001,a@example.com\n"]),
+    });
+    const user = userEvent.setup();
+    render(<App />);
+
+    await user.click(screen.getByRole("button", { name: /load sample data/i }));
+
+    expect(await screen.findByText("messy_customers.csv")).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /clean data/i })).toBeEnabled();
   });
 });

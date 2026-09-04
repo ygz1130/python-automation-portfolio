@@ -156,6 +156,22 @@ export default function App() {
     if (droppedFile) setFile(droppedFile);
   }
 
+  async function handleSample() {
+    setError("");
+    try {
+      const response = await fetch("/messy_customers.csv");
+      if (!response.ok) throw new Error("Unable to load the sample data");
+      const sample = new File([await response.blob()], "messy_customers.csv", {
+        type: "text/csv",
+      });
+      setFile(sample);
+      setStatus("idle");
+    } catch (sampleError) {
+      setError(sampleError.message);
+      setStatus("error");
+    }
+  }
+
   return (
     <main className="app-shell">
       <header className="topbar">
@@ -221,7 +237,9 @@ export default function App() {
             {error && <p className="error-message" role="alert">{error}</p>}
 
             <div className="form-actions">
-              <a href="/messy_customers.csv" download>Try sample data</a>
+              <button className="sample-button" type="button" onClick={handleSample}>
+                Load sample data
+              </button>
               <button type="submit" disabled={!file || status === "loading"}>
                 {status === "loading" ? "Cleaning…" : "Clean data"}
                 <span aria-hidden="true">→</span>
