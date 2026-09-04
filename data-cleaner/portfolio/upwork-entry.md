@@ -26,4 +26,4 @@ Python, FastAPI, pandas, React, API Integration, Data Processing, Data Extractio
 
 ## Repository
 
-Public repository URL will be added after publication and verification.
+Repository URL: https://github.com/ygz1130/python-automation-portfolio
