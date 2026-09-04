@@ -6,7 +6,7 @@ These projects are self-initiated technical demonstrations built to show how I a
 
 | Project | What it demonstrates | Status |
 | --- | --- | --- |
-| [CSV/Excel Data Cleaner](data-cleaner/) | Data normalization, validation, deduplication, file reports, API design, and a lightweight web UI | In development |
+| [CSV/Excel Data Cleaner](data-cleaner/) | Data normalization, validation, deduplication, file reports, API design, and a lightweight web UI | Ready for local review |
 | API Data Collector & Report Generator | API integration, pagination, error handling, structured exports, and a lightweight web UI | Planned |
 
 All data committed to this repository is fictional and created only for demonstration and testing.
