@@ -1,0 +1,51 @@
+name: Deploy Form and Field
+on:
+  push:
+    branches: [main]
+    paths: ['web-design/**', '.github/workflows/deploy-web-design.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: form-and-field-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: web-design/package-lock.json
+      - run: npm ci
+        working-directory: web-design
+      - run: npm run test:run
+        working-directory: web-design
+      - run: node --test scripts/create-pages-fallback.test.mjs
+        working-directory: web-design
+      - run: node scripts/check-content.mjs
+        working-directory: web-design
+      - run: npm run build
+        working-directory: web-design
+        env:
+          VITE_BASE_PATH: /python-automation-portfolio/
+      - run: node scripts/create-pages-fallback.mjs
+        working-directory: web-design
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web-design/dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4

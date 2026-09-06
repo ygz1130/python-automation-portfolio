@@ -10,3 +10,7 @@ These projects are self-initiated technical demonstrations built to show how I a
 | API Data Collector & Report Generator | API integration, pagination, error handling, structured exports, and a lightweight web UI | Planned |
 
 All data committed to this repository is fictional and created only for demonstration and testing.
+
+## Web Design Portfolio
+
+[Form & Field](web-design/README.md) is a separate self-initiated fictional studio website, built to demonstrate editorial web design, responsive React interfaces, accessible interaction, and a complete hospitality case study. Source and publication assets live in `web-design/`.
