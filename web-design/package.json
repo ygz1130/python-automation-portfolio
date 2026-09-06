@@ -9,6 +9,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "node scripts/create-pages-fallback.mjs",
+    "test:pages": "node --test scripts/create-pages-fallback.test.mjs",
+    "check:content": "node scripts/check-content.mjs",
     "preview": "vite preview",
     "test": "vitest",
     "test:run": "vitest run"

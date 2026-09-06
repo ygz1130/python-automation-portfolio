@@ -23,16 +23,14 @@ jobs:
         working-directory: web-design
       - run: npm run test:run
         working-directory: web-design
-      - run: node --test scripts/create-pages-fallback.test.mjs
+      - run: npm run test:pages
         working-directory: web-design
-      - run: node scripts/check-content.mjs
+      - run: npm run check:content
         working-directory: web-design
       - run: npm run build
         working-directory: web-design
         env:
           VITE_BASE_PATH: /python-automation-portfolio/
-      - run: node scripts/create-pages-fallback.mjs
-        working-directory: web-design
       - uses: actions/upload-pages-artifact@v3
         with:
           path: web-design/dist
