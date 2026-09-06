@@ -58,4 +58,6 @@ Validated locally on 2026-09-06 against production source commit `88a618e` with 
 
 Scores are single local Chrome/Lighthouse runs, not guarantees for all devices or a certification. The case-study font-size advisory includes deliberately scaled interface illustrations. Automated accessibility checks do not replace a complete manual audit.
 
-See [QA record](portfolio/qa-summary.md), [keyboard checks](portfolio/keyboard-qa.json), and [Upwork entry draft](portfolio/upwork-entry.md). Screenshots show the verified local production build; public deployment verification remains separate.
+See [QA record](portfolio/qa-summary.md), [keyboard checks](portfolio/keyboard-qa.json), and [Upwork entry draft](portfolio/upwork-entry.md). Screenshots show the verified production build.
+
+Published at [Form & Field](https://ygz1130.github.io/python-automation-portfolio/) on 2026-09-06. The [Aster House route](https://ygz1130.github.io/python-automation-portfolio/work/aster-house/) also returned HTTP 200 and rendered correctly after a direct browser refresh. Both public HTML entries exactly matched the locally verified production build. [Deployment run](https://github.com/ygz1130/python-automation-portfolio/actions/runs/34032578359) completed successfully after Pages was enabled in repository settings. Upwork submission remains pending user review.

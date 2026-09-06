@@ -33,4 +33,8 @@ Screenshots were captured directly from the same local production build with loc
 
 ## Publication boundary
 
-Public Pages deployment and production direct-route verification are not covered by these local results. Confirm both after deployment; recapture if the deployed design changes. Upwork copy remains a draft pending the user's review and explicit publication approval. Original data-cleaner work is outside this change.
+Deployment of e9ab71a was subsequently verified on 2026-09-06: GitHub Actions run 34032578359 succeeded; homepage and /work/aster-house/ both returned HTTP 200 and exactly matched the verified local HTML. The public browser rendered both pages, navigated from home to case, and retained the case title/content after direct refresh. The deployed design is unchanged from the screenshots.
+
+Live: https://ygz1130.github.io/python-automation-portfolio/
+
+Upwork copy remains a draft pending the user's review and explicit publication approval. Original data-cleaner work is unchanged.

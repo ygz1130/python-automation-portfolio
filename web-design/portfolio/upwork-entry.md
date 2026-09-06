@@ -19,6 +19,7 @@ Web Design · Responsive Design · Landing Page · React · User Interface Desig
 ## Links and status
 
 Source: https://github.com/ygz1130/python-automation-portfolio
-Target live URL (not yet verified): https://ygz1130.github.io/python-automation-portfolio/
+Live URL (verified 2026-09-06): https://ygz1130.github.io/python-automation-portfolio/
+Case study (direct refresh verified): https://ygz1130.github.io/python-automation-portfolio/work/aster-house/
 
 This entry is a review draft. Publish after the finished live site has been reviewed.
