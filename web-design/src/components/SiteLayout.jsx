@@ -7,7 +7,7 @@ function RouteEffects() {
   const previous = useRef(null);
   useEffect(() => {
     document.title =
-      location.pathname === "/work/aster-house"
+      location.pathname.replace(/\/+$/, "") === "/work/aster-house"
         ? "Aster House — Form & Field"
         : "Form & Field — Independent Digital Design Studio";
     const frame = requestAnimationFrame(() => {

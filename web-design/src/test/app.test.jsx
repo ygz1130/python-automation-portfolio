@@ -66,6 +66,12 @@ test("direct case route and unknown route have useful pages", () => {
   );
 });
 
+test("direct trailing-slash case route retains the case-study title", () => {
+  renderApp("/work/aster-house/");
+  expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent("Aster House");
+  expect(document.title).toBe("Aster House — Form & Field");
+});
+
 test("mobile disclosure hides closed links and restores focus on Escape", async () => {
   vi.spyOn(window, "matchMedia").mockImplementation((query) => ({
     matches: query.includes("max-width"),
