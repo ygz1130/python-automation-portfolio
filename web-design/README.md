@@ -37,6 +37,10 @@ Deployment implementation follows [Vite static deployment guidance](https://vite
 
 All layout, interface mockups, and concept identities were authored for this demo. Font license information and image prompts are recorded with their assets. Aster House is a fictional property. No client endorsement, launch metric, or business-performance improvement is claimed.
 
+- Instrument Serif: self-hosted through `@fontsource/instrument-serif`; Copyright 2022 The Instrument Serif Project Authors. [SIL Open Font License 1.1](public/licenses/instrument-serif-OFL.txt).
+- DM Sans: self-hosted through `@fontsource/dm-sans`; Copyright 2014 The DM Sans Project Authors. [SIL Open Font License 1.1](public/licenses/dm-sans-OFL.txt).
+- Original scene imagery: [exact generation prompts and provenance](portfolio/image-provenance.json). WebP variants and JPEG fallbacks are in `public/images/`.
+
 ## Validation status
 
 Implementation and browser verification are in progress. Measured test, viewport, and Lighthouse results will be added after the final build is inspected.
