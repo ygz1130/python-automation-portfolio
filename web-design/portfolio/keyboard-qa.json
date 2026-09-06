@@ -1,0 +1,12 @@
+{
+  "sourceCommit": "88a618e",
+  "result": "pass",
+  "checks": [
+    "Keyboard skip link focuses main",
+    "Case-study link reachable by Tab and activated by Enter",
+    "Visible focus outline",
+    "Mobile menu opens by Enter and closes by Escape with focus restored",
+    "Reduced-motion disables hero animation"
+  ],
+  "scope": "Local production preview; not a complete manual accessibility audit"
+}

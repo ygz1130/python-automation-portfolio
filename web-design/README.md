@@ -43,4 +43,19 @@ All layout, interface mockups, and concept identities were authored for this dem
 
 ## Validation status
 
-Implementation and browser verification are in progress. Measured test, viewport, and Lighthouse results will be added after the final build is inspected.
+Validated locally on 2026-09-06 against production source commit `88a618e` with the repository deployment basename.
+
+- 17 interface tests and 2 Pages fallback tests passed; disclosure audit and production build passed.
+- Both routes passed at 360×800, 768×1024, and 1440×1000: no horizontal overflow, failed requests, page exceptions, or axe WCAG 2/2.1 A/AA violations.
+- Verified keyboard navigation, visible focus, mobile menu/Escape, direct refresh, cross-route anchors, local form validation/success/reset, and reduced-motion behavior.
+
+| Page | Lighthouse preset | Performance | Accessibility | Best Practices | SEO |
+| --- | --- | --- | --- | --- | --- |
+| Homepage | Mobile | 97 | 100 | 100 | 100 |
+| Homepage | Desktop | 97 | 100 | 100 | 100 |
+| Aster House | Mobile | 95 | 100 | 96 | 100 |
+| Aster House | Desktop | 95 | 100 | 96 | 100 |
+
+Scores are single local Chrome/Lighthouse runs, not guarantees for all devices or a certification. The case-study font-size advisory includes deliberately scaled interface illustrations. Automated accessibility checks do not replace a complete manual audit.
+
+See [QA record](portfolio/qa-summary.md), [keyboard checks](portfolio/keyboard-qa.json), and [Upwork entry draft](portfolio/upwork-entry.md). Screenshots show the verified local production build; public deployment verification remains separate.
