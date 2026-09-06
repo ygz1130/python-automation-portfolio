@@ -9,7 +9,7 @@ function Availability() {
   return (
     <div className="availability">
       <span>
-        Make room for
+        Make room for{" "}
         <br />
         <i>a slower stay.</i>
       </span>
@@ -114,7 +114,7 @@ export function CaseStudyPage() {
           <div>
             <p className="eyebrow">THE STRATEGY</p>
             <h2>
-              Editorial rhythm,
+              Editorial rhythm,{" "}
               <br />
               <i>hospitality clarity.</i>
             </h2>
@@ -167,7 +167,7 @@ export function CaseStudyPage() {
                   Aa <i>Bb</i> Cc
                 </span>
                 <span>
-                  Instrument Serif
+                  Instrument Serif{" "}
                   <br />
                   DM Sans / A considered contrast
                 </span>
@@ -231,7 +231,7 @@ export function CaseStudyPage() {
             <div className="room-details">
               <span className="micro">A GOOD PLACE TO DO VERY LITTLE</span>
               <h3>
-                The light
+                The light{" "}
                 <br />
                 <i>comes in slowly.</i>
               </h3>
@@ -259,7 +259,7 @@ export function CaseStudyPage() {
           <div>
             <p className="eyebrow">CONSIDERED AT EVERY SCALE</p>
             <h2>
-              The same calm.
+              The same calm.{" "}
               <br />
               <i>A smaller screen.</i>
             </h2>
@@ -295,12 +295,12 @@ export function CaseStudyPage() {
               <div className="phone-copy">
                 <small>A QUIETER PACE</small>
                 <h3>
-                  A little closer
+                  A little closer{" "}
                   <br />
                   to <i>doing nothing.</i>
                 </h3>
                 <p>
-                  Six rooms on the coast.
+                  Six rooms on the coast.{" "}
                   <br />A place to be, for a while.
                 </p>
                 <span className="phone-cta">Plan your stay ↗</span>
@@ -327,7 +327,7 @@ export function CaseStudyPage() {
               <div className="phone-copy">
                 <h3>The Terrace Room</h3>
                 <p>
-                  Sun-warmed mornings.
+                  Sun-warmed mornings.{" "}
                   <br />A terrace all to yourself.
                 </p>
                 <div className="phone-room-meta">
@@ -343,7 +343,7 @@ export function CaseStudyPage() {
         <p className="eyebrow">THE DELIVERABLES</p>
         <div>
           <h2>
-            A focused system
+            A focused system{" "}
             <br />
             <i>ready to grow.</i>
           </h2>
@@ -368,7 +368,7 @@ export function CaseStudyPage() {
             THE NEXT GOOD THING STARTS WITH A CONVERSATION
           </p>
           <h2>
-            Let’s give your idea
+            Let’s give your idea{" "}
             <br />
             <i>a considered form.</i>
           </h2>

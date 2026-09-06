@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export function Wordmark() {
   return (
     <span className="wordmark">
-      form <i>&</i> field<span className="wordmark-dot">®</span>
+      form <i>&</i> field<span className="wordmark-dot" aria-hidden="true">✳</span>
     </span>
   );
 }

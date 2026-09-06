@@ -32,7 +32,7 @@ export function Services() {
             we <i>do.</i>
           </h2>
           <p>
-            A clear idea, carefully expressed.
+            A clear idea, carefully expressed.{" "}
             <br />
             Built to work in the real world.
           </p>
@@ -75,7 +75,7 @@ export function Process() {
           </h2>
         </div>
         <p>
-          Enough structure to move with purpose.
+          Enough structure to move with purpose.{" "}
           <br />
           Enough room for something unexpected.
         </p>

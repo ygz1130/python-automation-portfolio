@@ -67,12 +67,12 @@ test("direct case route and unknown route have useful pages", () => {
 });
 
 test("mobile disclosure hides closed links and restores focus on Escape", async () => {
-  window.matchMedia = (query) => ({
+  vi.spyOn(window, "matchMedia").mockImplementation((query) => ({
     matches: query.includes("max-width"),
     media: query,
     addEventListener() {},
     removeEventListener() {},
-  });
+  }));
   const user = userEvent.setup();
   renderApp();
   const header = screen.getByRole("banner");

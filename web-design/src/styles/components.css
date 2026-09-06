@@ -345,7 +345,7 @@
   font-family: var(--display);
   font-size: 24px;
   line-height: 1;
-  color: #77786a;
+  color: #68695c;
 }
 .project-category {
   font-size: 9px;
@@ -645,6 +645,7 @@
 }
 .book-clay {
   background: #bc6547;
+  color: #171b14;
   transform: rotate(-8deg);
 }
 .book-clay > span {
@@ -769,7 +770,7 @@
 .process-top > span:first-child {
   font-family: var(--display);
   font-size: 61px;
-  color: #aaa99b;
+  color: #858677;
 }
 .process-top > span:last-child {
   font-size: 25px;
